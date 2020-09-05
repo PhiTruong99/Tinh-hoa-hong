@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tính hoa hồng</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+            //5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.
+            //10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.
+            //20 % nếu tổng doanh số là lớn hơn 300 triệu.
+            //hoahong=doanhso*%/100;
+            var hoahong, doanhso;
+            doanhso = parseInt(prompt("Nhập vào doanh số: "));
+            if(doanhso<=100){
+                hoahong=(doanhso*5)/100;
+                document.write("Với doanh số = ",doanhso," triệu","</br>Hoa hồng nhận được = ",hoahong," triệu");
+            }else if(doanhso<=300){
+                hoahong=(doanhso*10)/100;
+                document.write("Với doanh số = ",doanhso," triệu","</br>Hoa hồng nhận được = ",hoahong," triệu");
+            }else{
+                hoahong=(doanhso*20)/100;
+                document.write("Với doanh số = ",doanhso," triệu","</br>Hoa hồng nhận được = ",hoahong," triệu");
+            }
+        </script>
+    </body>
+</html>
